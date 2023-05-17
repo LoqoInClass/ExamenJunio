@@ -16,6 +16,20 @@ public abstract class Animal {
     private char sexo;
     private double peso;
 
+    //Constructor de 4 parametros
+    
+    /**
+     * 
+     * @param codigo Codigo identificativo del animal. Tiene que ser una cadena formada por exactamente cinco caracteres alfanuméricos entre el '0' y el '9' o la 'a' y la 'z' en minúsculas.
+     * @param fechaNacimiento Cadena conteniendo la fecha que se quiere asignar al animal como fecha de nacimiento.
+     * @param sexo Sexo del animal. Será un caracter 'M' para los animales machos o 'H' para los animales hembra.
+     * @param peso Peso del animal en kilogramos expresado con decimales. Tiene que ser un número positivo mayor que cero.
+     * 
+     * Inicializa un objeto Animal recién creado a partir de un código identificativo, su fecha de nacimiento, su sexo y su peso.
+     * 
+     * @throws IllegalArgumentException Si alguno de los argumentos no cumple con las condiciones establecidas para ser considerados correctos
+     */
+    
     public Animal(String codigo, String fechaNacimiento, char sexo, double peso) {
 
         LocalDate fecha;
